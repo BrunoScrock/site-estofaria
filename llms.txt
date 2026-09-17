@@ -1,0 +1,26 @@
+# GL Estofaria
+
+Site profissional para divulgação de serviços de reparo, reforma e restauração de estofados.
+
+## Descrição
+A GL Estofaria é especializada em reforma, reparo, restauração e renovação de estofados. Transformamos móveis antigos, desgastados ou danificados em peças renovadas com acabamento e conforto.
+
+## Serviços
+- Reforma de sofás
+- Reforma de poltronas
+- Reforma de cadeiras
+- Reforma de bancos
+- Troca de tecido
+- Restauração de estofados
+- Acabamento e acabamento em couro e tecido
+
+## Localização
+[INSERIR CIDADE]
+
+## Contato
+- WhatsApp: [INSERIR WHATSAPP]
+- Instagram: [INSERIR INSTAGRAM]
+- E-mail: [INSERIR EMAIL]
+
+## Site
+[INSERIR URL DO SITE]
