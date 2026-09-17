@@ -1710,6 +1710,53 @@ header.glass {
   transform: translateY(-2px);
 }
 
+.coverage-map-placeholder {
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(180deg, var(--bg-card), var(--bg-secondary));
+  color: var(--text-muted);
+}
+
+.coverage-map-placeholder-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(var(--accent-rgb), 0.09);
+  border: 1px solid rgba(var(--accent-rgb), 0.22);
+  color: var(--accent-light);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverage-map-placeholder-icon i {
+  width: 26px;
+  height: 26px;
+}
+
+.coverage-map-placeholder h4 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.coverage-map-placeholder p {
+  font-size: 0.9rem;
+  max-width: 280px;
+}
+
+.coverage-map iframe[hidden],
+.coverage-map-link[hidden],
+.coverage-map-placeholder[hidden] {
+  display: none !important;
+}
+
 /* --------------------------------------------------------------------------
    17. FORMULÁRIO DE ORÇAMENTO
    -------------------------------------------------------------------------- */
@@ -2667,7 +2714,8 @@ body.no-scroll {
     align-items: center;
   }
 
-  .coverage-map iframe {
+  .coverage-map iframe,
+  .coverage-map-placeholder {
     height: 320px;
   }
 

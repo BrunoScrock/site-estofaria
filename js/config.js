@@ -22,6 +22,8 @@ const CONFIG = {
   cidade: "[INSERIR CIDADE]",
   endereco: "[INSERIR ENDEREÇO]",
   atendimento: "[INSERIR CIDADES/REGIÕES ATENDIDAS]",
+  mapaOpenStreetMap: "",          // URL de embed do OpenStreetMap (ex.: https://www.openstreetmap.org/export/embed.html?bbox=...&layer=mapnik&marker=...)
+  mapaLinkGoogle: "",             // Link "Como chegar" no Google Maps (ex.: https://www.google.com/maps?q=...)
 
   /* Funcionamento -------------------------------------------------------- */
   horario: "[INSERIR HORÁRIO]",

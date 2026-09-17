@@ -169,6 +169,27 @@ function aplicarConfiguracao() {
     enderecoFooter2.textContent = CONFIG.endereco;
   }
 
+  const mapaPlaceholder = document.getElementById("mapa-placeholder");
+  const mapaIframe = document.getElementById("mapa-iframe");
+  const mapaLink = document.getElementById("mapa-link");
+  const mapaUrl = CONFIG.mapaOpenStreetMap && String(CONFIG.mapaOpenStreetMap).startsWith("http")
+    ? CONFIG.mapaOpenStreetMap
+    : "";
+  const mapaLinkGoogle = CONFIG.mapaLinkGoogle && String(CONFIG.mapaLinkGoogle).startsWith("http")
+    ? CONFIG.mapaLinkGoogle
+    : "";
+
+  if (mapaPlaceholder && mapaIframe && mapaLink) {
+    const temMapa = !!mapaUrl;
+    if (temMapa) {
+      mapaIframe.setAttribute("src", mapaUrl);
+      if (mapaLinkGoogle) mapaLink.setAttribute("href", mapaLinkGoogle);
+    }
+    mapaIframe.hidden = !temMapa;
+    mapaLink.hidden = !temMapa;
+    mapaPlaceholder.hidden = temMapa;
+  }
+
   const instagram = document.getElementById("footer-instagram");
   if (instagram && CONFIG.instagram && !CONFIG.instagram.startsWith("[INSERIR")) {
     instagram.setAttribute("href", CONFIG.instagram);

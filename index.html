@@ -449,13 +449,20 @@
           </div>
 
           <div class="coverage-map">
+            <div class="coverage-map-placeholder" id="mapa-placeholder">
+              <span class="coverage-map-placeholder-icon"><i data-lucide="map" aria-hidden="true"></i></span>
+              <h4>Mapa em breve</h4>
+              <p>Assim que definirmos o endereço da loja, o mapa será exibido aqui.</p>
+            </div>
             <iframe
-              src="[INSERIR URL DO MAPA OPENSTREETMAP]"
+              id="mapa-iframe"
+              src="about:blank"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="Mapa de localização da GL Estofaria"
-              allowfullscreen></iframe>
-            <a class="coverage-map-link" href="[INSERIR LINK GOOGLE MAPS]" target="_blank" rel="noopener noreferrer">
+              allowfullscreen
+              hidden></iframe>
+            <a id="mapa-link" class="coverage-map-link" href="#" target="_blank" rel="noopener noreferrer" hidden>
               Como chegar
             </a>
           </div>
