@@ -1,6 +1,6 @@
 # Imagens do site
 
-Este diretório armazena todas as imagens do site da GL Estofaria.
+Este diretório armazena todas as imagens do site da Estofaria Capital.
 
 ## Estrutura
 

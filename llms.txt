@@ -1,9 +1,9 @@
-# GL Estofaria
+# Estofaria Capital
 
 Site profissional para divulgação de serviços de reparo, reforma e restauração de estofados.
 
 ## Descrição
-A GL Estofaria é especializada em reforma, reparo, restauração e renovação de estofados. Transformamos móveis antigos, desgastados ou danificados em peças renovadas com acabamento e conforto.
+A Estofaria Capital é especializada em reforma, reparo, restauração e renovação de estofados. Transformamos móveis antigos, desgastados ou danificados em peças renovadas com acabamento e conforto.
 
 ## Serviços
 - Reforma de sofás

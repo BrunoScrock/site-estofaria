@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CONFIGURAÇÃO CENTRALIZADA — GL ESTOFARIA
+   CONFIGURAÇÃO CENTRALIZADA — ESTOFARIA CAPITAL
    --------------------------------------------------------------------------
    Altere aqui as informações da empresa em um único lugar.
    ========================================================================== */
@@ -7,9 +7,9 @@
 const CONFIG = {
 
   /* Nome e identidade ---------------------------------------------------- */
-  empresa: "GL Estofaria",
-  logoNome: "GL",
-  subtitulo: "Estofaria",
+  empresa: "Estofaria Capital",
+  logoNome: "E",
+  subtitulo: "Reforma e Reparo de Estofados",
   tagline: "Reforma e Reparo de Estofados",
   slogan: "Renovamos seus estofados. Transformamos seus ambientes.",
 
@@ -34,10 +34,10 @@ const CONFIG = {
 
   /* Mensagens do WhatsApp ------------------------------------------------ */
   mensagemPadrao:
-    "Olá, GL Estofaria! Meu nome é [NOME] e gostaria de solicitar um orçamento.",
+    "Olá, Estofaria Capital! Meu nome é [NOME] e gostaria de solicitar um orçamento.",
 
   mensagemFormulario:
-    "Olá, GL Estofaria! Gostaria de solicitar um orçamento."
+    "Olá, Estofaria Capital! Gostaria de solicitar um orçamento."
 };
 
 /* ==========================================================================

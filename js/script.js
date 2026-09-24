@@ -1,5 +1,5 @@
 /* ==========================================================================
-   GL ESTOFARIA — Funcionalidades Principais
+   ESTOFARIA CAPITAL — Funcionalidades Principais
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -34,11 +34,11 @@ function abrirWhatsApp(mensagem) {
 }
 
 function enviarSolicitacao() {
-  abrirWhatsApp(CONFIG.mensagemPadrao || "Olá, GL Estofaria! Gostaria de solicitar um orçamento.");
+  abrirWhatsApp(CONFIG.mensagemPadrao || "Olá, Estofaria Capital! Gostaria de solicitar um orçamento.");
 }
 
 function enviarFotosWhatsApp() {
-  const msg = "Olá, GL Estofaria! Envio fotos do meu móvel para avaliação de orçamento.";
+  const msg = "Olá, Estofaria Capital! Envio fotos do meu móvel para avaliação de orçamento.";
   abrirWhatsApp(msg);
 }
 
@@ -61,7 +61,7 @@ function enviarFormulario(event) {
     return;
   }
 
-  let mensagem = "Olá, GL Estofaria! Meu nome é " + nome + " e gostaria de solicitar um orçamento.\n\n";
+  let mensagem = "Olá, Estofaria Capital! Meu nome é " + nome + " e gostaria de solicitar um orçamento.\n\n";
   if (mobili) mensagem += "*Tipo de móvel:* " + mobili + "\n";
   if (servico) mensagem += "*Serviço:* " + servico + "\n";
   if (mensagemExtra) mensagem += "*Descrição:* " + mensagemExtra + "\n";
@@ -84,8 +84,10 @@ function aplicarConfiguracao() {
   const ctaFooterDesc = document.getElementById("slogan-footer");
   const heroTitleLine1 = document.getElementById("hero-title-line-1");
 
-  if (logoNome) logoNome.textContent = CONFIG.logoNome || CONFIG.empresa;
-  if (logoMark) logoMark.textContent = CONFIG.logoNome || "GL";
+  if (logoNome) logoNome.textContent = CONFIG.empresa;
+  if (logoMark) logoMark.textContent = CONFIG.logoNome || "E";
+  const logoSub = document.getElementById("logo-sub");
+  if (logoSub) logoSub.textContent = CONFIG.subtitulo || CONFIG.tagline;
   if (footerNome) footerNome.textContent = CONFIG.empresa;
   if (footerSub) footerSub.textContent = CONFIG.subtitulo;
   if (copyrightNome) copyrightNome.textContent = CONFIG.empresa;
@@ -94,7 +96,7 @@ function aplicarConfiguracao() {
 
   if (heroSub && CONFIG.slogan) heroSub.textContent = CONFIG.slogan;
   if (ctaFooterDesc && CONFIG.slogan) ctaFooterDesc.textContent = CONFIG.slogan;
-  if (heroTitleLine1) heroTitleLine1.textContent = CONFIG.empresa || "GL ESTOFARIA";
+  if (heroTitleLine1) heroTitleLine1.textContent = CONFIG.empresa || "ESTOFARIA CAPITAL";
 
   const badgeHorario2 = document.getElementById("badge-horario-2");
   if (badgeHorario2) badgeHorario2.textContent = CONFIG.horario || "[INSERIR HORÁRIO]";
@@ -371,7 +373,7 @@ function criarLightbox() {
   lightboxOverlay.className = "lightbox";
   lightboxOverlay.setAttribute("role", "dialog");
   lightboxOverlay.setAttribute("aria-modal", "true");
-  lightboxOverlay.setAttribute("aria-label", "Galeria de fotos da GL Estofaria");
+  lightboxOverlay.setAttribute("aria-label", "Galeria de fotos da Estofaria Capital");
   lightboxOverlay.innerHTML =
     '<button class="lightbox-close" aria-label="Fechar galeria"><i data-lucide="x"></i></button>' +
     '<div class="lightbox-counter"></div>' +
@@ -522,7 +524,7 @@ function criarLightboxAD() {
   lightboxADOverlay.className = "lightbox";
   lightboxADOverlay.setAttribute("role", "dialog");
   lightboxADOverlay.setAttribute("aria-modal", "true");
-  lightboxADOverlay.setAttribute("aria-label", "Galeria antes e depois da GL Estofaria");
+  lightboxADOverlay.setAttribute("aria-label", "Galeria antes e depois da Estofaria Capital");
   lightboxADOverlay.innerHTML =
     '<button class="lightbox-close" aria-label="Fechar galeria"><i data-lucide="x"></i></button>' +
     '<div class="lightbox-counter"></div>' +

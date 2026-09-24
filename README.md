@@ -1,4 +1,4 @@
-# GL Estofaria
+# Estofaria Capital
 
 Site institucional para divulgação de serviços de reparo, reforma e restauração de estofados.
 
@@ -16,7 +16,7 @@ Sem backend, sem banco de dados, sem bibliotecas pesadas. O site funciona abrind
 ## Estrutura de Pastas
 
 ```text
-gl-estofaria/
+site-estofaria/
 ├── index.html
 ├── README.md
 ├── .gitignore
@@ -145,21 +145,21 @@ Para textos institucionais (seção Sobre), edite diretamente no `index.html` (s
 
 ## Como publicar no GitHub Pages
 
-1. Crie um repositório no GitHub (ex.: `gl-estofaria`).
+1. Crie um repositório no GitHub (ex.: `site-estofaria`).
 2. Envie os arquivos:
 
 ```bash
 git init
 git add .
-git commit -m "Primeira versão do site GL Estofaria"
+git commit -m "Primeira versão do site Estofaria Capital"
 git branch -M main
-git remote add origin https://github.com/seu-usuario/gl-estofaria.git
+git remote add origin https://github.com/seu-usuario/site-estofaria.git
 git push -u origin main
 ```
 
 3. No GitHub, acesse **Settings → Pages**.
 4. Em **Branch**, selecione `main` e a pasta `/ (root)`, e clique em **Save**.
-5. O site ficará disponível em `https://seu-usuario.github.io/gl-estofaria/`.
+5. O site ficará disponível em `https://seu-usuario.github.io/site-estofaria/`.
 
 **Importante:** todos os caminhos de imagens e arquivos usam caminhos relativos — funcionam em qualquer subpasta do GitHub Pages sem alteração.
 
