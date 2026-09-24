@@ -238,16 +238,29 @@ header.glass {
 }
 
 /* Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
 .nav-menu ul {
   display: flex;
+  align-items: center;
   gap: 4px;
 }
 
+.nav-menu li {
+  display: flex;
+}
+
 .nav-menu a {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 0.9rem;
+  line-height: 1;
   color: rgba(255, 255, 255, 0.72);
-  padding: 8px 13px;
+  padding: 9px 13px;
   border-radius: var(--radius-sm);
   position: relative;
   transition: color 0.25s, background 0.25s;
@@ -256,14 +269,15 @@ header.glass {
 .nav-menu a::after {
   content: "";
   position: absolute;
-  bottom: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
+  left: 13px;
+  right: 13px;
+  bottom: 5px;
   height: 2px;
   background: linear-gradient(90deg, var(--accent-dark), var(--accent-light));
   border-radius: 2px;
-  transition: width 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
 .nav-menu a:hover,
@@ -273,7 +287,7 @@ header.glass {
 
 .nav-menu a:hover::after,
 .nav-menu a.active::after {
-  width: 60%;
+  transform: scaleX(1);
 }
 
 /* Ações do header */
@@ -2671,6 +2685,7 @@ body.no-scroll {
     display: block;
     padding: 14px 26px;
     font-size: 1rem;
+    line-height: 1.4;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
 
@@ -2875,6 +2890,11 @@ body.no-scroll {
     font-size: 0.82rem;
   }
 
+  .nav-menu a::after {
+    left: 9px;
+    right: 9px;
+  }
+
   .btn-header {
     padding: 10px 14px;
     font-size: 0.75rem;
@@ -2895,6 +2915,11 @@ body.no-scroll {
   .nav-menu a {
     padding: 7px 10px;
     font-size: 0.84rem;
+  }
+
+  .nav-menu a::after {
+    left: 10px;
+    right: 10px;
   }
 
   .btn-header {
