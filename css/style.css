@@ -220,19 +220,19 @@ header.glass {
 
 .logo-text strong {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--text-primary);
   text-transform: uppercase;
 }
 
 .logo-text em {
   font-style: normal;
-  font-size: 0.62rem;
+  font-size: 0.55rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.42em;
+  letter-spacing: 0.14em;
   color: var(--accent-light);
   white-space: nowrap;
 }
@@ -2866,7 +2866,7 @@ body.no-scroll {
   }
 
   .logo-text strong {
-    font-size: 1.1rem;
+    font-size: 0.98rem;
     letter-spacing: 0.04em;
   }
 
@@ -2878,6 +2878,28 @@ body.no-scroll {
   .btn-header {
     padding: 10px 14px;
     font-size: 0.75rem;
+  }
+}
+
+/* Notebooks compactos — evita que o menu comprima os botões */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .logo-text strong {
+    font-size: 0.95rem;
+  }
+
+  .logo-text em {
+    font-size: 0.5rem;
+    letter-spacing: 0.12em;
+  }
+
+  .nav-menu a {
+    padding: 7px 10px;
+    font-size: 0.84rem;
+  }
+
+  .btn-header {
+    padding: 10px 15px;
+    font-size: 0.78rem;
   }
 }
 
@@ -2893,7 +2915,7 @@ body.no-scroll {
   }
 
   .logo-text strong {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
   }
 
   .nav-menu.active {
