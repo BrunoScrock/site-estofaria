@@ -1,6 +1,6 @@
 # Imagens do site
 
-Este diretório armazena todas as imagens do site da Estofaria Capital.
+Este diretório armazena todas as imagens do site modelo (template de estofaria).
 
 ## Estrutura
 

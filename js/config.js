@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CONFIGURAÇÃO CENTRALIZADA — ESTOFARIA CAPITAL
+   CONFIGURAÇÃO CENTRALIZADA — SITE MODELO
    --------------------------------------------------------------------------
    Altere aqui as informações da empresa em um único lugar.
    ========================================================================== */
@@ -7,8 +7,8 @@
 const CONFIG = {
 
   /* Nome e identidade ---------------------------------------------------- */
-  empresa: "Estofaria Capital",
-  logoNome: "E",
+  empresa: "Nome da sua empresa",
+  logoNome: "X",
   subtitulo: "Reforma e Reparo de Estofados",
   tagline: "Reforma e Reparo de Estofados",
   slogan: "Renovamos seus estofados. Transformamos seus ambientes.",
@@ -34,10 +34,10 @@ const CONFIG = {
 
   /* Mensagens do WhatsApp ------------------------------------------------ */
   mensagemPadrao:
-    "Olá, Estofaria Capital! Meu nome é [NOME] e gostaria de solicitar um orçamento.",
+    "Olá! Meu nome é [NOME] e gostaria de solicitar um orçamento.",
 
   mensagemFormulario:
-    "Olá, Estofaria Capital! Gostaria de solicitar um orçamento."
+    "Olá! Gostaria de solicitar um orçamento."
 };
 
 /* ==========================================================================

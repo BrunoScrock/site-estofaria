@@ -1,4 +1,4 @@
-# Estofaria Capital
+# Nome da sua empresa
 
 Site institucional para divulgação de serviços de reparo, reforma e restauração de estofados.
 
@@ -151,7 +151,7 @@ Para textos institucionais (seção Sobre), edite diretamente no `index.html` (s
 ```bash
 git init
 git add .
-git commit -m "Primeira versão do site Estofaria Capital"
+git commit -m "Primeira versão do site modelo"
 git branch -M main
 git remote add origin https://github.com/seu-usuario/site-estofaria.git
 git push -u origin main
