@@ -31,6 +31,7 @@ const CONFIG = {
 
   /* Redes Sociais -------------------------------------------------------- */
   instagram: "[INSERIR INSTAGRAM]",
+  avaliacao: "",                // Link para avaliação no Google (ex.: https://search.google.com/local/writereview?placeid=...)
 
   /* Mensagens do WhatsApp ------------------------------------------------ */
   mensagemPadrao:

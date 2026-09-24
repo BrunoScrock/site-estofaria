@@ -2199,8 +2199,68 @@ header.glass {
 }
 
 /* --------------------------------------------------------------------------
-   20. BOTÃO FLUTUANTE WHATSAPP
+   20. BOTÕES FLUTUANTES (AVALIAÇÃO GOOGLE + WHATSAPP)
    -------------------------------------------------------------------------- */
+.avaliacao-float {
+  position: fixed;
+  bottom: 102px;
+  right: 28px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(29, 25, 20, 0.55);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--accent-light);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  transition: transform 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.avaliacao-float:hover {
+  transform: scale(1.12);
+  background: rgba(33, 28, 23, 0.7);
+  border-color: rgba(var(--accent-rgb), 0.45);
+}
+
+.avaliacao-float svg,
+.avaliacao-float i {
+  width: 30px;
+  height: 30px;
+}
+
+.avaliacao-float-tip {
+  position: absolute;
+  right: 74px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(29, 25, 20, 0.82);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+.avaliacao-float:hover .avaliacao-float-tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(-4px);
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 28px;
@@ -2778,6 +2838,23 @@ body.no-scroll {
   }
 
   .whatsapp-float-tip {
+    display: none;
+  }
+
+  .avaliacao-float {
+    bottom: 86px;
+    right: 18px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .avaliacao-float svg,
+  .avaliacao-float i {
+    width: 28px;
+    height: 28px;
+  }
+
+  .avaliacao-float-tip {
     display: none;
   }
 }

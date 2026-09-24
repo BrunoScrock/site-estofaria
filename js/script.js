@@ -197,6 +197,28 @@ function aplicarConfiguracao() {
     instagram.setAttribute("href", CONFIG.instagram);
   }
 
+  const avaliacaoFloat = document.getElementById("avaliacao-float");
+  const linkAvaliacao = CONFIG.avaliacao && String(CONFIG.avaliacao).startsWith("http")
+    ? CONFIG.avaliacao
+    : "";
+  if (avaliacaoFloat) {
+    if (linkAvaliacao) avaliacaoFloat.setAttribute("href", linkAvaliacao);
+    avaliacaoFloat.setAttribute("target", "_blank");
+    avaliacaoFloat.setAttribute("rel", "noopener noreferrer");
+  }
+
+  document.addEventListener("click", function (e) {
+    const alvo = e.target.closest("#avaliacao-float");
+    if (alvo && !linkAvaliacao) {
+      e.preventDefault();
+      alert(
+        "Link de avaliação no Google ainda não configurado.\n\n" +
+        "Abra o arquivo js/config.js e preencha CONFIG.avaliacao " +
+        "com o link de avaliação da sua empresa no Google."
+      );
+    }
+  });
+
   const anoAtual = document.getElementById("ano-atual");
   if (anoAtual) anoAtual.textContent = new Date().getFullYear();
 
